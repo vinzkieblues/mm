@@ -1,0 +1,6 @@
+
+ <div *ngFor="let week of weeks">
+     {{getDaysInWeek(week.start,week.end)}}
+ </div>
+ <full-calendar defaultView="dayGridMonth" [plugins]="calendarPlugins"></full-calendar>
+<app-courses></app-courses>

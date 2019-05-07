@@ -1,0 +1,114 @@
+<h1>Courses</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="row day-columns">
+        <div class="day-column">
+          <div class="day-header">Monday</div>
+          <div class="day-content">
+            <div *ngFor="let course of courses">
+                <div class="event blue">
+                    <span class="title">{{course.title}}</span>
+                    <footer>
+                        <span>{{course.start | date:'shortTime'}}</span>
+                        <span>{{course.end | date:'shortTime'}}</span>
+                    </footer>
+                </div>
+            </div>
+          </div>
+          <div class="day-footer">4 tasks</div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Tuesday</div>
+          <div class="day-content">
+            <div *ngFor="let course of courses">
+                <div class="event green">
+                    <span class="title">{{course.title}}</span>
+                    <footer>
+                        <span>{{course.start | date:'shortTime'}}</span>
+                        <span>{{course.end | date:'shortTime'}}</span>
+                    </footer>
+                </div>
+            </div>
+          </div>
+          <div class="day-footer">2 Tasks</div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Wednesday</div>
+          <div class="day-content">
+            <div *ngFor="let course of courses">
+                <div class="event navy">
+                    <span class="title">{{course.title}}</span>
+                    <footer>
+                        <span>{{course.start | date:'shortTime'}}</span>
+                        <span>{{course.end | date:'shortTime'}}</span>
+                    </footer>
+                </div>
+            </div>
+          </div>
+          <div class="day-footer">4 tasks</div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Thursday</div>
+          <div class="day-content">
+            <div *ngFor="let course of courses">
+                <div class="event turquoise">
+                    <span class="title">{{course.title}}</span>
+                    <footer>
+                        <span>{{course.start | date:'shortTime'}}</span>
+                        <span>{{course.end | date:'shortTime'}}</span>
+                    </footer>
+                </div>
+            </div>
+          </div>
+          <div class="day-footer">5 Tasks</div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Friday</div>
+          <div class="day-content">
+            <div *ngFor="let course of courses">
+                <div class="event blue">
+                    <span class="title">{{course.title}}</span>
+                    <footer>
+                        <span>{{course.start | date:'shortTime'}}</span>
+                        <span>{{course.end | date:'shortTime'}}</span>
+                    </footer>
+                </div>
+            </div>
+          </div>
+          <div class="day-footer">7 Tasks</div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Saturday</div>
+          <div class="day-content">
+            <div *ngFor="let course of courses">
+                <div class="event purple">
+                    <span class="title">{{course.title}}</span>
+                    <footer>
+                        <span>{{course.start | date:'shortTime'}}</span>
+                        <span>{{course.end | date:'shortTime'}}</span>
+                    </footer>
+                </div>
+            </div>
+          </div>
+          <div class="day-footer">4 Tasks</div>
+        </div>
+        <div class="day-column">
+          <div class="day-header">Sunday</div>
+          <div class="day-content">
+              <div *ngFor="let course of courses">
+                  <div class="event yellow">
+                      <span class="title">{{course.title}}</span>
+                      <footer>
+                        <span>{{course.start | date:'shortTime'}}</span>
+                        <span>{{course.end | date:'shortTime'}}</span>
+                      </footer>
+                  </div>
+              </div>
+          </div>
+          <div class="day-footer">2 Tasks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
